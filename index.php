@@ -7,6 +7,7 @@ if (isset($_SESSION['ralat'])) {
     unset($_SESSION['ralat']);
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,16 +24,14 @@ if (isset($_SESSION['ralat'])) {
                     <input
                         type="text"
                         name="id_pengguna"
-                        class="form-control"
-                        autocomplete="off">
+                        class="form-control">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Kata Laluan</label>
                     <input
                         type="password"
                         name="kata_laluan"
-                        class="form-control"
-                        autocomplete="off">
+                        class="form-control">
                 </div>
                 <p class="text-danger">
                     <?= $ralat ?></p>
