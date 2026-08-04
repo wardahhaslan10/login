@@ -6,7 +6,7 @@
     <title>Login</title>
 </head>
 <body>
-    
+
  <h2>Login Pengguna</h2>
 
     <form action="login.php" method="POST">
@@ -24,6 +24,5 @@
         <button type="submit">Log Masuk</button>
 
     </form>
-
 </body>
 </html>
