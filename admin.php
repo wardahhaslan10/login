@@ -14,7 +14,7 @@ if (!isset($_SESSION['id_pengguna'])) {
     <title>Admin</title>
 </head>
 <body>
-    
+
  <h2>Selamat Datang Admin</h2>
 
     <p>
