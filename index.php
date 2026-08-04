@@ -7,8 +7,14 @@
 </head>
 <body>
 
- <h2>Login Pengguna</h2>
+    <h2>Login Pengguna</h2>
 
+    <?php
+    if (isset($_SESSION['ralat'])) {
+        echo "<p style='color:red'>" . $_SESSION['ralat'] . "</p>";
+        unset($_SESSION['ralat']);
+    }
+    ?>
     <form action="login.php" method="POST">
 
         <label for="id_pengguna">ID Pengguna:</label>
