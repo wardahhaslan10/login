@@ -8,7 +8,6 @@ if (!isset($_SESSION['id_pengguna'])) {
 
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +16,7 @@ if (!isset($_SESSION['id_pengguna'])) {
     <title>Staff</title>
 </head>
 <body>
-    
+
      <h2>Selamat Datang Staf</h2>
 
     <p>
