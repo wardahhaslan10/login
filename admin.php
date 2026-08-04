@@ -14,9 +14,13 @@ if (!isset($_SESSION['id_pengguna'])) {
     <title>Admin</title>
 </head>
 <body>
-<h2>Selamat Datang Admin</h2>
-<p>ID Pengguna:
-<?php echo $_SESSION['id_pengguna']; ?>
-</p>
+    
+ <h2>Selamat Datang Admin</h2>
+
+    <p>
+        ID Pengguna:
+        <?php echo $_SESSION['id_pengguna']; ?>
+    </p>
+
 </body>
-</html>
+</html
