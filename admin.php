@@ -5,7 +5,6 @@ if (!isset($_SESSION['id_pengguna'])) {
     header("Location: index.php");
     exit();
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
