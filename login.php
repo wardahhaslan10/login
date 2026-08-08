@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 session_start();
 
@@ -25,7 +25,6 @@ if ($id_pengguna == "admin" && $kata_laluan == "admin") {
     header("Location: index.php");
     exit();
 }
-=======
 <?php
 session_start();
 
@@ -52,5 +51,4 @@ if ($id_pengguna == "admin" && $kata_laluan == "admin") {
     exit();
 
 }
->>>>>>> 69174441c72b3d861e157e454a150dd934c13b86
 ?>
