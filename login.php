@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 session_start();
 
@@ -24,4 +25,32 @@ if ($id_pengguna == "admin" && $kata_laluan == "admin") {
     header("Location: index.php");
     exit();
 }
+=======
+<?php
+session_start();
+
+$id_pengguna = $_POST['id_pengguna'];
+$kata_laluan = $_POST['kata_laluan'];
+
+if ($id_pengguna == "admin" && $kata_laluan == "admin") {
+
+    $_SESSION['id_pengguna'] = $id_pengguna;
+
+    header("Location: admin.php");
+    exit();
+
+} elseif ($id_pengguna == "staf" && $kata_laluan == "staf") {
+
+    $_SESSION['id_pengguna'] = $id_pengguna;
+
+    header("Location: staf.php");
+    exit();
+
+} else {
+
+    header("Location: index.php");
+    exit();
+
+}
+>>>>>>> 69174441c72b3d861e157e454a150dd934c13b86
 ?>
