@@ -8,7 +8,6 @@ if (!isset($_SESSION['jenis']) || $_SESSION['jenis'] != "admin") {
     exit();
 
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
