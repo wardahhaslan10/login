@@ -1,31 +1,65 @@
 <?php
+
 session_start();
 
-if (!isset($_SESSION['id_pengguna']) || $_SESSION['id_pengguna'] != "staf") {
-    header("Location: index.php");
+if (!isset($_SESSION['jenis']) || $_SESSION['jenis'] != "staf") {
+
+    header("Location: ../login.php");
     exit();
+
 }
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staf</title>
+
+    <title>Staf Dashboard</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="bg-light">
 
-    <div class="container mt-5">
-        <div class="alert alert-info text-center">
+<div class="container mt-5">
 
-            <h2>Selamat Datang Staf</h2>
-            <p>Anda berjaya login sebagai Staf.</p>
+    <div class="card shadow">
+
+        <div class="card-header bg-success text-white">
+
+            <h3>Staf Dashboard</h3>
+
         </div>
-    </div>
-</body>
 
+        <div class="card-body">
+
+            <h5>
+                Welcome, <?php echo $_SESSION['nama_staf']; ?>
+            </h5>
+
+            <p>
+                You have successfully logged in as Staff.
+            </p>
+
+            <a
+                href="../logout.php"
+                class="btn btn-danger"
+            >
+                Logout
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
 </html>

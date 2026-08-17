@@ -7,7 +7,11 @@ include "db.php";
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// Semak table admin dahulu
+
+// =====================================
+// CHECK ADMIN
+// =====================================
+
 $sql_admin = "SELECT * FROM admin WHERE username = '$username'";
 
 $result_admin = mysqli_query($conn, $sql_admin);
@@ -35,7 +39,10 @@ if (mysqli_num_rows($result_admin) > 0) {
 }
 
 
-// Kalau bukan admin, semak table staf
+// =====================================
+// CHECK STAF
+// =====================================
+
 $sql_staf = "SELECT * FROM staf WHERE username = '$username'";
 
 $result_staf = mysqli_query($conn, $sql_staf);
@@ -64,31 +71,13 @@ if (mysqli_num_rows($result_staf) > 0) {
 }
 
 
-// Username tak jumpa dalam kedua-dua table
+// =====================================
+// USERNAME TAK JUMPA
+// =====================================
+
 $_SESSION['ralat'] = "Username atau password salah.";
 
 header("Location: login.php");
 exit();
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
